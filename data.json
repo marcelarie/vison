@@ -1,0 +1,112 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zip": "12345"
+      },
+      "phone": "555-1234"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "address": {
+        "street": "456 Elm St",
+        "city": "Othertown",
+        "state": "TX",
+        "zip": "67890"
+      },
+      "phone": "555-5678"
+    }
+  ],
+  "products": [
+    {
+      "id": 101,
+      "name": "Laptop",
+      "category": "Electronics",
+      "price": 799.99,
+      "stock": 25
+    },
+    {
+      "id": 102,
+      "name": "Smartphone",
+      "category": "Electronics",
+      "price": 499.99,
+      "stock": 50
+    },
+    {
+      "id": 103,
+      "name": "Coffee Maker",
+      "category": "Kitchen",
+      "price": 39.99,
+      "stock": 100
+    }
+  ],
+  "orders": [
+    {
+      "id": 1001,
+      "user_id": 1,
+      "date": "2024-07-01",
+      "items": [
+        {
+          "product_id": 101,
+          "quantity": 1,
+          "price": 799.99
+        },
+        {
+          "product_id": 103,
+          "quantity": 2,
+          "price": 39.99
+        }
+      ],
+      "total": 879.97,
+      "status": "shipped"
+    },
+    {
+      "id": 1002,
+      "user_id": 2,
+      "date": "2024-07-02",
+      "items": [
+        {
+          "product_id": 102,
+          "quantity": 1,
+          "price": 499.99
+        }
+      ],
+      "total": 499.99,
+      "status": "processing"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Electronics"
+    },
+    {
+      "id": 2,
+      "name": "Kitchen"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "product_id": 101,
+      "user_id": 1,
+      "rating": 5,
+      "comment": "Great laptop, very fast and reliable!"
+    },
+    {
+      "id": 2,
+      "product_id": 103,
+      "user_id": 2,
+      "rating": 4,
+      "comment": "Good coffee maker, but a bit noisy."
+    }
+  ]
+}
